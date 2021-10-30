@@ -1,20 +1,24 @@
-import Head from 'next/head'
+import Head from "next/head";
 import {
   useColorMode,
   Heading,
   Text,
   Flex,
-  Stack
-} from '@chakra-ui/react'
-
-import Container from '../components/Container'
-
+  Stack,
+  HStack,
+  Button,
+} from "@chakra-ui/react";
+import { Avatar, WrapItem } from "@chakra-ui/react";
+import Container from "../components/Container";
+import { Icon } from "@chakra-ui/react";
+import { GoOctoface } from "react-icons/go";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 export default function Index() {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
   const colorSecondary = {
-    light: 'gray.700',
-    dark: 'gray.400'
-  }
+    light: "gray.700",
+    dark: "gray.400",
+  };
   return (
     <Container>
       <Head>
@@ -31,14 +35,58 @@ export default function Index() {
       >
         <Flex
           flexDirection="column"
-          justifyContent="flex-start"
-          alignItems="flex-start"
+          justifyContent="center"
+          alignItems="center"
+          marginTop="60px"
           maxWidth="700px"
         >
+          <WrapItem>
+            <Avatar
+              name="Segun Adebayo"
+              size="2xl"
+              src="https://avatars.githubusercontent.com/u/18382518?s=400&u=8f2cc93898a29da6c3c4cedfb36be2e90f14d608&v=4"
+            />
+          </WrapItem>
           <Heading mb={2}>Hi, Im h3x</Heading>
-          <Text color={colorSecondary[colorMode]}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante nunc, finibus sit amet purus quis, congue vulputate ipsum. Phasellus lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.</Text>
+          <Text color={colorSecondary[colorMode]}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante
+            nunc, finibus sit amet purus quis, congue vulputate ipsum. Phasellus
+            lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.
+          </Text>
+          <HStack padding="70px">
+            <Button colorScheme="blue" variant="outline">
+              <Icon
+                as={GoOctoface}
+                w={8}
+                h={8}
+                m={1}
+                color={colorSecondary[colorMode]}
+              />{" "}
+              GitHub
+            </Button>
+            <Button colorScheme="blue" variant="outline">
+              <Icon
+                as={FaTwitter}
+                w={8}
+                h={8}
+                m={1}
+                color={colorSecondary[colorMode]}
+              />{" "}
+              Twitter
+            </Button>
+            <Button colorScheme="blue" variant="outline">
+              <Icon
+                as={FaLinkedin}
+                w={8}
+                h={8}
+                m={1}
+                color={colorSecondary[colorMode]}
+              />{" "}
+              Linkedin
+            </Button>
+          </HStack>
         </Flex>
       </Stack>
     </Container>
-  )
+  );
 }

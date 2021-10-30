@@ -7,9 +7,8 @@ import {
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import styled from '@emotion/styled'
-
 import DarkModeSwitch from '../components/DarkModeSwitch'
-import { DownloadIcon, EmailIcon } from '@chakra-ui/icons'
+import { DownloadIcon} from '@chakra-ui/icons'
 
 const Container = ({ children }) => {
     const { colorMode } = useColorMode()
@@ -83,6 +82,7 @@ const Container = ({ children }) => {
                 mt={[4, 8, 8]}
             >
                 {children}
+
             </Flex>
         </>
     )
