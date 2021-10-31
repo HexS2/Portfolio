@@ -12,7 +12,7 @@ const Footer = () => {
       <HStack spacing={8} mb={8}>
         <Text color="gray.400">Made with ❤️ by h3x</Text>
       </HStack>
-      <Flex width="100%" justifyContent="center" wrap="wrap">
+      <Flex width="100%" height="100px" justifyContent="center" wrap="wrap">
         <svg
           id="wave"
           style={{ transform: "rotate(0deg)", transition: "0.3s" }}

@@ -38,7 +38,6 @@ const Container = ({ children }) => {
         justifyContent="space-between"
         alignItems="center"
         maxWidth="100%"
-        minWidth="356px"
         boxShadow="lg"
         bg={bgColor[colorMode]}
         as="nav"
@@ -75,15 +74,12 @@ const Container = ({ children }) => {
       <Flex
         as="main"
         justifyContent="center"
-        maxWidth="100%"
         flexDirection="column"
         bg={bgColor[colorMode]}
         color={color[colorMode]}
-        h="100vh"
       >
-        <div style={{ height: "90vh", margin: 0, padding: 0 }}></div>
         {children}
-        <Footer />
+        <Footer minWidth="100vh" />
       </Flex>
     </>
   );

@@ -7,6 +7,7 @@ import {
   Stack,
   HStack,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import { Avatar, WrapItem } from "@chakra-ui/react";
 import Container from "../components/Container";
@@ -20,7 +21,7 @@ export default function Index() {
     dark: "gray.400",
   };
   return (
-    <Container>
+    <Container maxWidth="container.xl">
       <Head>
         <title>Home - h3x</title>
       </Head>
@@ -38,7 +39,7 @@ export default function Index() {
           justifyContent="center"
           alignItems="center"
           marginTop="60px"
-          maxWidth="100%"
+          maxWidth="700px"
         >
           <WrapItem>
             <Avatar
@@ -54,35 +55,44 @@ export default function Index() {
             lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.
           </Text>
           <HStack padding="70px">
-            <Button colorScheme="blue" variant="outline">
-              <Icon
-                as={GoOctoface}
-                w={8}
-                h={8}
-                m={1}
-                color={colorSecondary[colorMode]}
-              />{" "}
-              GitHub
+            <Button colorScheme="white" variant="outline">
+              <Link href="https://github.com/HexS2" isExternal>
+                <Icon
+                  as={GoOctoface}
+                  w={8}
+                  h={8}
+                  m={1}
+                  color={colorSecondary[colorMode]}
+                />{" "}
+                GitHub
+              </Link>
             </Button>
-            <Button colorScheme="blue" variant="outline">
-              <Icon
-                as={FaTwitter}
-                w={8}
-                h={8}
-                m={1}
-                color={colorSecondary[colorMode]}
-              />{" "}
-              Twitter
+            <Button colorScheme="white" variant="outline">
+              <Link href="https://twitter.com/CTRLfr" isExternal>
+                <Icon
+                  as={FaTwitter}
+                  w={8}
+                  h={8}
+                  m={1}
+                  color={colorSecondary[colorMode]}
+                />{" "}
+                Twitter
+              </Link>
             </Button>
-            <Button colorScheme="blue" variant="outline">
-              <Icon
-                as={FaLinkedin}
-                w={8}
-                h={8}
-                m={1}
-                color={colorSecondary[colorMode]}
-              />{" "}
-              Linkedin
+            <Button colorScheme="white" variant="outline">
+              <Link
+                href="https://www.linkedin.com/in/guillaume-lecareux-1456671a6/"
+                isExternal
+              >
+                <Icon
+                  as={FaLinkedin}
+                  w={8}
+                  h={8}
+                  m={1}
+                  color={colorSecondary[colorMode]}
+                />{" "}
+                Linkedin
+              </Link>
             </Button>
           </HStack>
         </Flex>
