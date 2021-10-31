@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import styled from "@emotion/styled";
 import DarkModeSwitch from "../components/DarkModeSwitch";
 import { DownloadIcon } from "@chakra-ui/icons";
-
+import Footer from "../components/Footer";
 const Container = ({ children }) => {
   const { colorMode } = useColorMode();
 
@@ -39,7 +39,7 @@ const Container = ({ children }) => {
         alignItems="center"
         maxWidth="100%"
         minWidth="356px"
-        width="100%"
+        boxShadow="lg"
         bg={bgColor[colorMode]}
         as="nav"
         px={[2, 6, 6]}
@@ -50,22 +50,12 @@ const Container = ({ children }) => {
       >
         <Box>
           <NextLink href="/" passHref>
-            <Button
-              as="a"
-              variant="ghost"
-              p={[1, 2, 4]}
-              _hover={{ backgroundColor: navHoverBg[colorMode] }}
-            >
+            <Button as="a" variant="ghost" p={[1, 2, 4]}>
               Home
             </Button>
           </NextLink>
           <NextLink href="/work" passHref>
-            <Button
-              as="a"
-              variant="ghost"
-              p={[1, 2, 4]}
-              _hover={{ backgroundColor: navHoverBg[colorMode] }}
-            >
+            <Button as="a" variant="ghost" p={[1, 2, 4]}>
               My Work
             </Button>
           </NextLink>
@@ -75,7 +65,6 @@ const Container = ({ children }) => {
               leftIcon={<DownloadIcon />}
               variant="ghost"
               p={[1, 2, 4]}
-              _hover={{ backgroundColor: navHoverBg[colorMode] }}
             >
               Downloads
             </Button>
@@ -86,11 +75,15 @@ const Container = ({ children }) => {
       <Flex
         as="main"
         justifyContent="center"
+        maxWidth="100%"
         flexDirection="column"
         bg={bgColor[colorMode]}
         color={color[colorMode]}
+        h="100vh"
       >
+        <div style={{ height: "90vh", margin: 0, padding: 0 }}></div>
         {children}
+        <Footer />
       </Flex>
     </>
   );

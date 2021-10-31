@@ -38,7 +38,7 @@ export default function Index() {
           justifyContent="center"
           alignItems="center"
           marginTop="60px"
-          maxWidth="700px"
+          maxWidth="100%"
         >
           <WrapItem>
             <Avatar
