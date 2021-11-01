@@ -32,7 +32,9 @@ export default function Download() {
         <ImSmile />
         <Box flex="1">
           <AlertTitle>Hey !</AlertTitle>
-          <AlertDescription display="block">To access</AlertDescription>
+          <AlertDescription display="block">
+            Please disable your addblocker to access download
+          </AlertDescription>
         </Box>
         <CloseButton
           onClick={() => setDisplay("none")}
