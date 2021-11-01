@@ -88,7 +88,7 @@ export default function Download() {
                 </WrapItem>
                 <WrapItem>
                   <Button colorScheme="green" variant="solid">
-                    <Link href="http://j.gs/B4DE" isExternal>
+                    <Link href="http://j.gs/Fwlr" isExternal>
                       <DownloadIcon /> Download
                     </Link>
                   </Button>
