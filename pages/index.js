@@ -31,7 +31,7 @@ export default function Index() {
         justifyContent="center"
         alignItems="flex-start"
         m="0 auto 4rem auto"
-        maxWidth="700px"
+        minW="container.sm"
         px={2}
       >
         <Flex
@@ -39,7 +39,7 @@ export default function Index() {
           justifyContent="center"
           alignItems="center"
           marginTop="60px"
-          maxWidth="700px"
+          minW="container.sm"
         >
           <WrapItem>
             <Avatar

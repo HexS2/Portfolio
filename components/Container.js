@@ -37,7 +37,7 @@ const Container = ({ children }) => {
         flexDirection="row"
         justifyContent="space-between"
         alignItems="center"
-        maxWidth="100%"
+        maxWidth="container.2xl"
         minWidth="container.sm"
         boxShadow="lg"
         bg={bgColor[colorMode]}
@@ -78,10 +78,11 @@ const Container = ({ children }) => {
         flexDirection="column"
         bg={bgColor[colorMode]}
         color={color[colorMode]}
+        maxWidth="container.2xl"
         minWidth="container.sm"
       >
         {children}
-        <Footer minWidth="container.sm" />
+        <Footer />
       </Flex>
     </>
   );
