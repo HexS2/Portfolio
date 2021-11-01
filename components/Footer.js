@@ -8,6 +8,7 @@ const Footer = () => {
       alignItems="center"
       width="100%"
       direction="column"
+      top="0"
     >
       <HStack spacing={8} mb={8}>
         <Text color="gray.400">Made with ❤️ by h3x</Text>

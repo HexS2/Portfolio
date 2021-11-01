@@ -21,7 +21,7 @@ export default function Index() {
     dark: "gray.400",
   };
   return (
-    <Container maxWidth="container.xl">
+    <Container>
       <Head>
         <title>Home - h3x</title>
       </Head>
