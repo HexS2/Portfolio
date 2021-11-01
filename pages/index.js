@@ -71,10 +71,7 @@ export default function Index() {
             </Link>
           </Button>
           <Button colorScheme="white" variant="outline">
-            <Link
-              href="https://www.linkedin.com/in/guillaume-lecareux-1456671a6/"
-              isExternal
-            >
+            <Link href="https://www.linkedin.com/" isExternal>
               <Icon
                 as={FaLinkedin}
                 w={8}
