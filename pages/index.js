@@ -42,7 +42,7 @@ export default function Index() {
         <Heading mb={2}>👋 Hi there !</Heading>
         <Text color={colorSecondary[colorMode]}>I make stuff with code.</Text>
         <Text color={colorSecondary[colorMode]}>
-          I am a French developer. My name is Guillaume AKA h3x and i'm 22 years
+          I am a French developer. My name is Guillaume AKA h3x and im 22 years
           old.
         </Text>
         <HStack padding="70px">
