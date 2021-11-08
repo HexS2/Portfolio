@@ -40,18 +40,20 @@ export default function Index() {
           />
         </WrapItem>
         <Heading mb={2}>👋 Hi there !</Heading>
-        <Text color={colorSecondary[colorMode]}>I make stuff with code.</Text>
-        <Text color={colorSecondary[colorMode]}>
+        <Text textAlign="center" color={colorSecondary[colorMode]}>
+          I make stuff with code.
+        </Text>
+        <Text textAlign="center" color={colorSecondary[colorMode]}>
           I am a French developer. My name is Guillaume AKA h3x and im 22 years
           old.
         </Text>
-        <HStack padding="70px">
+        <HStack padding="50px" maxW="100%">
           <Button colorScheme="white" variant="outline">
             <Link href="https://github.com/HexS2" isExternal>
               <Icon
                 as={GoOctoface}
-                w={8}
-                h={8}
+                w={5}
+                h={5}
                 m={1}
                 color={colorSecondary[colorMode]}
               />{" "}
@@ -62,8 +64,8 @@ export default function Index() {
             <Link href="https://twitter.com/CTRLfr" isExternal>
               <Icon
                 as={FaTwitter}
-                w={8}
-                h={8}
+                w={5}
+                h={5}
                 m={1}
                 color={colorSecondary[colorMode]}
               />{" "}
@@ -74,8 +76,8 @@ export default function Index() {
             <Link href="https://www.linkedin.com/" isExternal>
               <Icon
                 as={FaLinkedin}
-                w={8}
-                h={8}
+                w={5}
+                h={5}
                 m={1}
                 color={colorSecondary[colorMode]}
               />{" "}
