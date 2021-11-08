@@ -84,8 +84,8 @@ const Container = ({ children }) => {
         mx="auto"
       >
         {children}
-        <Footer minHeight="100%" />
       </Flex>
+      <Footer />
     </>
   );
 };

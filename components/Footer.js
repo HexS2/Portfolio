@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Text, HStack } from "@chakra-ui/react";
+import { Flex, Text, HStack, Container } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
       minWidth="100%"
       direction="column"
       marginTop="60px"
-      minHeight="100%"
+      height="100%"
     >
       <HStack spacing={8} mb={8}>
         <Text color="gray.400">Made with ❤️ by h3x</Text>
