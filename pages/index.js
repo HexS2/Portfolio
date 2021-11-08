@@ -39,11 +39,11 @@ export default function Index() {
             src="https://avatars.githubusercontent.com/u/18382518?s=400&u=8f2cc93898a29da6c3c4cedfb36be2e90f14d608&v=4"
           />
         </WrapItem>
-        <Heading mb={2}>Hi, Im h3x</Heading>
+        <Heading mb={2}>👋 Hi there !</Heading>
+        <Text color={colorSecondary[colorMode]}>I make stuff with code.</Text>
         <Text color={colorSecondary[colorMode]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ante nunc,
-          finibus sit amet purus quis, congue vulputate ipsum. Phasellus
-          lobortis bibendum orci, quis imperdiet lectus imperdiet porttitor.
+          I am a French developer. My name is Guillaume AKA h3x and i'm 22 years
+          old.
         </Text>
         <HStack padding="70px">
           <Button colorScheme="white" variant="outline">
