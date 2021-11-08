@@ -6,10 +6,8 @@ const Footer = () => {
     <Flex
       justifyContent="center"
       alignItems="center"
-      minWidth="100%"
       direction="column"
-      marginTop="60px"
-      height="100%"
+      marginTop="auto"
     >
       <HStack spacing={8} mb={8}>
         <Text color="gray.400">Made with ❤️ by h3x</Text>

@@ -86,6 +86,7 @@ const Container = ({ children }) => {
         {children}
       </Flex>
       <Footer />
+      <style></style>
     </>
   );
 };

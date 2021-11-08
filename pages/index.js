@@ -23,7 +23,6 @@ export default function Index() {
     <Container>
       <Head>
         <title>Home - h3x</title>
-        <link rel="shortcut icon" type="image/x-icon" href="" />
       </Head>
 
       <Flex

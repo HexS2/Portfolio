@@ -6,11 +6,24 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider resetCSS theme={customTheme}>
       <ColorModeProvider
         options={{
-          initialColorMode: "white",
+          initialColorMode: "dark",
           useSystemColorMode: true,
         }}
       ></ColorModeProvider>
-
+      <style jsx global>{`
+        #__next {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+        main {
+          margin-inline-end: 0 !important;
+          -webkit-margin-end: 0 !important;
+          -webkit-margin-start: 0 !important;
+          min-height: 0 !important ;
+          min-width: 0 !important;
+        }
+      `}</style>
       <Component {...pageProps} />
     </ChakraProvider>
   );
