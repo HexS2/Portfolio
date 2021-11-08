@@ -38,7 +38,7 @@ const Container = ({ children }) => {
         justifyContent="space-between"
         alignItems="center"
         maxWidth="container.2xl"
-        minWidth="container.sm"
+        minWidth="100%"
         boxShadow="lg"
         bg={bgColor[colorMode]}
         as="nav"
@@ -46,7 +46,6 @@ const Container = ({ children }) => {
         py={2}
         mt={0}
         mb={[0, 0, 0]}
-        mx="auto"
       >
         <Box>
           <NextLink href="/" passHref>
@@ -79,7 +78,7 @@ const Container = ({ children }) => {
         bg={bgColor[colorMode]}
         color={color[colorMode]}
         maxWidth="container.2xl"
-        minWidth="container.sm"
+        minWidth="100%"
       >
         {children}
         <Footer />
