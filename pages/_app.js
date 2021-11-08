@@ -16,6 +16,12 @@ function MyApp({ Component, pageProps }) {
           display: flex;
           flex-direction: column;
         }
+        @media only screen and (max-height: 500px) {
+          #__next {
+            height: 100%;
+          }
+        }
+
         main {
           margin-inline-end: 0 !important;
           -webkit-margin-end: 0 !important;
