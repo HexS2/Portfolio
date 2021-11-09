@@ -8,14 +8,9 @@ import {
   Wrap,
   WrapItem,
   Button,
-  Alert,
-  AlertTitle,
-  AlertDescription,
 } from "@chakra-ui/react";
 import { DownloadIcon } from "@chakra-ui/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { ImSmile } from "react-icons/im";
-import { CloseButton } from "@chakra-ui/close-button";
 import React from "react";
 export default function Download() {
   const [display, setDisplay] = React.useState("true");
@@ -27,28 +22,13 @@ export default function Download() {
   };
   return (
     <Container>
-      <Alert status="success" display={display}>
-        <ImSmile />
-        <Box flex="1">
-          <AlertTitle>Hey !</AlertTitle>
-          <AlertDescription display="block">
-            Please disable your addblocker to access download
-          </AlertDescription>
-        </Box>
-        <CloseButton
-          onClick={() => setDisplay("none")}
-          position="absolute"
-          right="8px"
-          top="8px"
-        />
-      </Alert>
       <Flex
         flexDirection="row"
         justifyContent="center"
         alignItems="center"
         marginTop="60px"
       >
-        <Wrap spacing="30px" justify="center">
+        <Wrap spacing="0px" justify="center">
           <WrapItem>
             <Box
               _hover={{ boxShadow: "2xl", transition: "0.5s" }}
