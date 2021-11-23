@@ -53,7 +53,7 @@ const Voxel = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 5.8;
+      const scale = scH * 0.005 + 6.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -74,7 +74,7 @@ const Voxel = () => {
       controls.target = target;
       setControls(controls);
 
-      loadGLTFModel(scene, "/dog.glb", {
+      loadGLTFModel(scene, "/scene.gltf", {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
