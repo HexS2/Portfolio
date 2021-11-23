@@ -5,6 +5,12 @@ import styled from "@emotion/styled";
 import DarkModeSwitch from "../components/DarkModeSwitch";
 import { DownloadIcon } from "@chakra-ui/icons";
 import Footer from "../components/Footer";
+import VoxelLoader from "./voxel-loader";
+import dynamic from "next/dynamic";
+const LazyVoxel = dynamic(() => import("./voxel-loader"), {
+  ssr: false,
+  loading: () => <VoxelLoader />,
+});
 const Container = ({ children }) => {
   const { colorMode } = useColorMode();
 
@@ -83,6 +89,7 @@ const Container = ({ children }) => {
         minHeight="100%"
         mx="auto"
       >
+        <LazyVoxel />
         {children}
       </Flex>
       <Footer />

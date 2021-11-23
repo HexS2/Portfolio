@@ -13,18 +13,19 @@ import Container from "../components/Container";
 import { Icon } from "@chakra-ui/react";
 import { GoOctoface } from "react-icons/go";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+
 export default function Index() {
   const { colorMode } = useColorMode();
   const colorSecondary = {
     light: "gray.700",
     dark: "gray.400",
   };
+
   return (
     <Container>
       <Head>
         <title>Home - h3x</title>
       </Head>
-
       <Flex
         flexDirection="column"
         justifyContent="center"

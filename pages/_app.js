@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }) {
           min-width: 0 !important;
         }
       `}</style>
+
       <Component {...pageProps} />
     </ChakraProvider>
   );
