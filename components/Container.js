@@ -89,7 +89,6 @@ const Container = ({ children }) => {
         minHeight="100%"
         mx="auto"
       >
-        <LazyVoxel />
         {children}
       </Flex>
       <Footer />

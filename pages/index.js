@@ -13,7 +13,12 @@ import Container from "../components/Container";
 import { Icon } from "@chakra-ui/react";
 import { GoOctoface } from "react-icons/go";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import VoxelLoader from "../components/voxel-loader";
+import dynamic from "next/dynamic";
+const LazyVoxel = dynamic(() => import("../components/voxel-loader"), {
+  ssr: false,
+  loading: () => <VoxelLoader />,
+});
 export default function Index() {
   const { colorMode } = useColorMode();
   const colorSecondary = {
@@ -32,6 +37,7 @@ export default function Index() {
         alignItems="center"
         marginTop="60px"
       >
+        <LazyVoxel />
         <WrapItem>
           <Avatar
             name="Segun Adebayo"
