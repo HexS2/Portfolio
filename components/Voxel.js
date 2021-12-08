@@ -16,9 +16,9 @@ const Voxel = () => {
   const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0));
   const [initialCameraPosition] = useState(
     new THREE.Vector3(
-      20 * Math.sin(0.2 * Math.PI),
+      45 * Math.sin(0.2 * Math.PI),
       10,
-      20 * Math.cos(0.2 * Math.PI)
+      45 * Math.cos(0.2 * Math.PI)
     )
   );
   const [scene] = useState(new THREE.Scene());
@@ -53,7 +53,7 @@ const Voxel = () => {
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.005 + 6.8;
+      const scale = scH * 0.005 + 60.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,

@@ -21,7 +21,7 @@ export const VoxelContainer = forwardRef(({ children }, ref) => (
     mb={["-50px", "-150px", "-200px"]}
     width="50%"
     minW={[280, 375, 640]}
-    h={[280, 480, 640]}
+    h={[200, 380, 640]}
     position="relative"
   >
     {children}

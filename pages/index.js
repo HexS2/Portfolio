@@ -31,12 +31,7 @@ export default function Index() {
       <Head>
         <title>Home - h3x</title>
       </Head>
-      <Flex
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        marginTop="60px"
-      >
+      <Flex flexDirection="column" justifyContent="center" alignItems="center">
         <LazyVoxel />
         <WrapItem>
           <Avatar
